@@ -1,0 +1,48 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div class="background-container">
+
+    <ion-card>
+
+      <ion-card-header>
+        <img src="../../assets/photo.png" alt="Avatar" style="width:130px"/>
+        <ion-card-title>
+         <h2><b><i>WELCOME!</i></b></h2>
+        </ion-card-title>
+
+      </ion-card-header>
+    <ion-card-content></ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
+<ion-content>
+
+  <ion-item>
+    <ion-label>Checkup Purpose</ion-label>
+    <ion-select [(ngModel)]= 'Purpose'>
+      <ion-select-option value="Immunization">Immunization</ion-select-option>
+      <ion-select-option value="Vaccines">Vaccines</ion-select-option>
+      <ion-select-option value="Maternal">Maternal</ion-select-option>
+      <ion-select-option value="Tubercolosis">Tubercolosis</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+<br>
+  <ion-item>
+    <ion-label position="floating">Date: </ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" min="1994-03-14" max="2030-12-09" value="2002-09-23T15:03:46.789"></ion-datetime>
+  </ion-item>
+<br>
+  <ion-item>
+    <ion-label>Preffered Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" minuteValues="00,5,10,15,20,25,30,35,40,45,50,55,"></ion-datetime>
+  </ion-item>
+<br>
+<ion-button shape="round" color="secondary"size="full" >
+  <b>Submit Request</b>
+ </ion-button>
+</ion-content>

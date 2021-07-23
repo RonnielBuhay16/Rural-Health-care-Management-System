@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title> BHW Survey</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tubercolosis Survey Form</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-card-content>
+    <ion-list>
+    <ion-item>
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input [(ngModel)] = 'fname' type="text"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-label position="floating">Middle Name</ion-label>
+      <ion-input  [(ngModel)] = 'mname' type="text"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input  [(ngModel)] = 'lname' type="text"></ion-input>
+     </ion-item>
+     <br>
+     <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select [(ngModel)] = 'gender'>
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+    </ion-select>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Age</ion-label>
+      <ion-input [(ngModel)] = 'age' type="number"></ion-input>
+     </ion-item>
+
+     <ion-item>
+      <ion-label>Enrolled in TB DOTS?</ion-label>
+      <ion-select [(ngModel)] = 'dots'>
+        <ion-select-option value="TRUE">Yes</ion-select-option>
+        <ion-select-option value="FALSE">No</ion-select-option>
+    </ion-select>
+     </ion-item>
+
+     <ion-item>
+     <ion-button value="save" expand="block" color="success" (click)="Insert()">Save </ion-button>
+    <ion-button value="cancel"expand="block" color="secondary">Cancel</ion-button>
+     </ion-item>
+<ion-card-content>
+
+ 
+</ion-card-content>

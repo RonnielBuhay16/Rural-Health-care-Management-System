@@ -1,0 +1,34 @@
+ion-container{
+  --ion-backgorund-color: #fff
+}
+
+
+ion-card{
+  text-align: center;
+  background: transparent;
+  box-shadow: none;
+
+  img{
+
+    height:7rem;
+    width: 7.2rem;
+  }
+  ion-card-title{
+    font-size: 30px;
+    color: #000000;
+    font-weight:400;
+
+  }
+  ion-card-content{
+    margin-top: 20px;
+
+
+  }
+
+}
+
+
+
+
+
+

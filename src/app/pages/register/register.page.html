@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title> Sign-Up Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Create your Account Here, It Takes Only A Minuite</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group [(ngModel)]= 'gender'>
+          <ion-list-header>
+            <ion-label>Gender</ion-label>
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label>Male</ion-label>
+            <ion-radio slot="start" value="Male"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Female</ion-label>
+            <ion-radio slot="start" value="Female"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card-content>
+    <ion-list>
+    <ion-item>
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input [(ngModel)]= 'fname' type="text"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-label position="floating">Middle Name</ion-label>
+      <ion-input [(ngModel)]= 'mname' type="text"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input [(ngModel)]= 'lname' type="text"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-label position="floating">Mobile Number</ion-label>
+      <ion-input [(ngModel)]= 'number'type="number"></ion-input>
+     </ion-item>
+    </ion-list>
+    <br>
+    <ion-item>
+      <ion-label>Select your Barangay</ion-label>
+      <ion-select [(ngModel)]= 'brgy'>
+        <ion-select-option value="Acle">Acle</ion-select-option>
+        <ion-select-option value="Bayudbud">Bayudbud</ion-select-option>
+        <ion-select-option value="Bolboc">Bolboc</ion-select-option>
+        <ion-select-option value="Burgos">Burgos</ion-select-option>
+        <ion-select-option value="Dalima">Dalima</ion-select-option>
+        <ion-select-option value="Dao">Dao</ion-select-option>
+        <ion-select-option value="Guinhawa">Guinhawa</ion-select-option>
+        <ion-select-option value="Lumbangan">Lumbangan</ion-select-option>
+        <ion-select-option value="Luna">Luna</ion-select-option>
+        <ion-select-option value="Luntal">Luntal</ion-select-option>
+        <ion-select-option value="Magahis">Magahis</ion-select-option>
+        <ion-select-option value="Malibu">Malibu</ion-select-option>
+        <ion-select-option value="Mataywanac">Mataywanac</ion-select-option>
+        <ion-select-option value="Palincaro">Palincaro</ion-select-option>
+        <ion-select-option value="Putol">Putol</ion-select-option>
+        <ion-select-option value="Rillo">Rillo</ion-select-option>
+        <ion-select-option value="Rizal">Rizal</ion-select-option>
+        <ion-select-option value="Sabang">Sabang</ion-select-option>
+        <ion-select-option value="San Jose">San Jose</ion-select-option>
+        <ion-select-option value="Talon">Talon</ion-select-option>
+        <ion-select-option value="Toong">Toong</ion-select-option>
+        <ion-select-option value="Tuyon\-Tuyon">Tuyon</ion-select-option>
+      </ion-select>
+    </ion-item>
+</ion-card-content>
+<ion-card-content>
+  <ion-item>
+    <ion-label position="floating">Username</ion-label>
+    <ion-input [(ngModel)]= 'username' type="text"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input [(ngModel)]= 'password' type="password"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label position="floating">Verify Password</ion-label>
+    <ion-input [(ngModel)]= 'vpass'type="password"></ion-input>
+   </ion-item>
+   <ion-button expand="block" color="tertiary" (click)="tryRegister()" [disabled]="disabledbutton">Register</ion-button>
+</ion-card-content>
+
+
+
